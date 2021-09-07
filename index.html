@@ -38,48 +38,68 @@
   <h3>Primeiro, seu prato</h3>
   <div class="container"> 
   
-  <div class="produto">
-    <img src="./assets/images/frangoFrito.jpg" alt="imagem de um frango">
-    <section class="text">
-      <h4>Frango Yin-Yang</h4>
-      <p>Um pouco de batata, um pouco de salada</p>
-      <p class="preco"><strong>R$ 19,90</strong></p>
-    </section>
+    <div id="frango" class="produto" onclick="escolherFrango()">
+      <img src="./assets/images/frangoFrito.jpg" alt="imagem de um frango">
+      <section class="text">
+        <h4>Frango Yin-Yang</h4>
+        <p>Um pouco de batata, um pouco de salada</p>
+        <p class="preco">R$ 19,90</p>
+      </section>
+    </div>
+
+    <div id="carne" class="produto" onclick="escolheCarne()">
+      <img src="./assets/images/carneESalada.jpg" alt="imagem de um frango">
+      <section class="text">
+        <h4>carne e salada</h4>
+        <p>Patida no meio para parecer mais carne</p>
+        <p class="preco">R$ 24,90</p>
+      </section>
+    </div>
   </div>
 
-  <div class="produto">
-    <img src="./assets/images/carneESalada.jpg" alt="imagem de um frango">
-    <section class="text">
-      <h4>carne e salada</h4>
-      <p>Patida no meio para parecer mais carne</p>
-      <p class="preco"><strong>R$ 24,90</strong></p>
-    </section>
-  </div>
-  </div>
   <h3>Agora, sua bebida</h3>
+  
   <div class="container">
-  <div class="produto">
-    <img src="./assets/images/coca.jpg" alt="imagem de um frango">
-    <section class="text">
-      <h4>Coca-cola gelada</h4>
-      <p>Normal, zero ou Stevia</p>
-      <p class="preco"><strong>R$ 5,90</strong></p>
-    </section>
+    <div class="produto">
+      <img src="./assets/images/coca.jpg" alt="imagem de um frango">
+      <section class="text">
+        <h4>Coca-cola gelada</h4>
+        <p>Normal, zero ou Stevia</p>
+        <p class="preco">R$ 5,90</p>
+      </section>
+    </div>
+
+    <div class="produto">
+      <img src="./assets/images/refrescoNatural.jpg" alt="imagem de um frango">
+      <section class="text">
+        <h4>suco natural</h4>
+        <p>Suco, mas com água</p>
+        <p class="preco">R$ 5,90</p>
+      </section>
+    </div>
   </div>
 
-  <div class="produto">
-    <img src="./assets/images/refrescoNatural.jpg" alt="imagem de um frango">
-    <section class="text">
-      <h4>suco natural</h4>
-      <p>Suco, mas com água</p>
-      <p class="preco"><strong>R$ 5,90</strong></p>
-    </section>
+  <h3>Por fim, sua sobremesa</h3>
+  <div class="container">
+    <div class="produto">
+      <img src="./assets/images/pudim.jpg"/>
+      <h4>Pudim</h4>
+      <p>Apenas um lindo e brilhante pudim</p>
+      <p class="preco">R$ 7,90</p>
+    </div>
+    <div class="produto">
+      <img src="./assets/images/sorvete.jpg"/>
+      <h4>Sorvete bem gelado</h4>
+      <p>Três bolinhas como na foto</p>
+      <p class="preco">R$ 6,90</p>
+    </div>
   </div>
-  
-</div>
 <div class="botao">
   Finalizar pedido
 </div>
 
+
+
+<script src="./assets/scripts.js"></script>
 </body>
 </html>

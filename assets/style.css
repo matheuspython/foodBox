@@ -38,6 +38,7 @@ body{
   flex-wrap: wrap;
   width:100%;
   max-width: 200px;
+  text-align: center;
 
 }
 
@@ -70,6 +71,8 @@ img{
 .preco {
   font-weight: bold;
   font-size: 18px;
+  text-align: center;
+  margin-top: 15px;
 }
 .botao {
   background: #0b940b;
