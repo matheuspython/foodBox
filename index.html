@@ -38,16 +38,19 @@
   <h3>Primeiro, seu prato</h3>
   <div class="container"> 
   
-    <div id="frango" class="produto" onclick="escolherFrango()">
+
+    <div id="frango" class="produto prato" onclick="escolherFrango()">
+      
       <img src="./assets/images/frangoFrito.jpg" alt="imagem de um frango">
       <section class="text">
         <h4>Frango Yin-Yang</h4>
         <p>Um pouco de batata, um pouco de salada</p>
         <p class="preco">R$ 19,90</p>
+        
       </section>
     </div>
 
-    <div id="carne" class="produto" onclick="escolheCarne()">
+    <div id="carne" class="produto prato" onclick="escolheCarne()">
       <img src="./assets/images/carneESalada.jpg" alt="imagem de uma carne com salada">
       <section class="text">
         <h4>carne e salada</h4>
@@ -60,7 +63,7 @@
   <h3>Agora, sua bebida</h3>
   
   <div class="container">
-    <div id="coca" class="produto" onclick="escolheCoca()">
+    <div id="coca" class="produto bebida" onclick="escolheCoca()">
       <img src="./assets/images/coca.jpg" alt="imagem de uma coca cola">
       <section class="text">
         <h4>Coca-cola gelada</h4>
@@ -69,7 +72,7 @@
       </section>
     </div>
 
-    <div id="suco" class="produto" onclick="escolheSuco()">
+    <div id="suco" class="produto bebida" onclick="escolheSuco()">
       <img src="./assets/images/refrescoNatural.jpg" alt="imagem de um suco natural">
       <section class="text">
         <h4>suco natural</h4>
@@ -81,21 +84,25 @@
 
   <h3>Por fim, sua sobremesa</h3>
   <div class="container">
-    <div id="pudim" class="produto" onclick="escolhePudim()">
+    <div id="pudim" class="produto sobremesa" onclick="escolhePudim()">
       <img src="./assets/images/pudim.jpg" alt="imagem de um pudim">
-      <h4>Pudim</h4>
-      <p>Apenas um lindo e brilhante pudim</p>
-      <p class="preco">R$ 7,90</p>
+      <section class="text">
+        <h4>Pudim</h4>
+        <p>Apenas um lindo e brilhante pudim</p>
+        <p class="preco">R$ 7,90</p>
+      </section>
     </div>
 
-    <div id="sorvete" class="produto" onclick="escolheSorvete()">
+    <div id="sorvete" class="produto sobremesa" onclick="escolheSorvete()">
       <img src="./assets/images/sorvete.jpg" alt="sorvete">
-      <h4>Sorvete bem gelado</h4>
-      <p>Três bolinhas como na foto</p>
-      <p class="preco">R$ 6,90</p>
+      <section class="text">
+        <h4>Sorvete bem gelado</h4>
+        <p>Três bolinhas como na foto</p>
+        <p class="preco">R$ 6,90</p>
+      </section>  
     </div>
   </div>
-<div class="botao">
+<div onclick="finalizarPedido()" class="botao">
   Finalizar pedido
 </div>
 
