@@ -1,49 +1,3 @@
-// let prato;
-// let bebida;
-// let sobremesa
-
-// function escolherFrango(){
-//   document.querySelector('#frango').style.borderColor ='green'
-//   document.querySelector('#carne').style.borderColor ='white'
-//   prato = 'frango'
-// }
-
-// function escolheCarne(){
-//   document.querySelector('#carne').style.borderColor ='green'
-//   document.querySelector('#frango').style.borderColor ='white' 
-//   prato = 'carne'
-// }
-
-// function escolheCoca(){
-//   document.querySelector('#coca').style.borderColor ='green'
-//   document.querySelector('#suco').style.borderColor ='white' 
-//   bebida = 'coca-cola'
-// }
-
-// function escolheSuco(){
-//   document.querySelector('#suco').style.borderColor ='green'
-//   document.querySelector('#coca').style.borderColor ='white' 
-//   bebida = 'suco'
-// }
-
-// function escolhePudim(){
-//   document.querySelector('#pudim').style.borderColor ='green'
-//   document.querySelector('#sorvete').style.borderColor ='white' 
-//   sobremesa = 'pudim'
-// }
-
-// function escolheSorvete(){
-//   document.querySelector('#sorvete').style.borderColor ='green'
-//   document.querySelector('#pudim').style.borderColor ='white' 
-//   sobremesa = 'sorvete'
-// }
-
-
-
-// function finalizarPedido(){
-
-// }
-
 const button = document.querySelector('.botao')
 const produtos = { 
   prato: '',
@@ -81,10 +35,18 @@ function autualizaStatusBtn(){
   if(produtos.bebida == '' || produtos.prato == '' || produtos.sobremesa ==''){
     button.style.background = 'gray'
     button.innerHTML = 'Escolha 3 pedidos'
+    return false;
   }
   else{
     button.style.background = 'green'
     button.innerHTML = 'Finalizar pedido'
+    return true
   }
 
 }
+
+button.addEventListener('click', () =>{
+  if(!autualizaStatusBtn()) return;
+  const text = `Olá, gostaria de pedir um combo ${produtos.prato}, ${produtos.bebida} e ${produtos.sobremesa}`
+  window.open(`https://wa.me/+554140028922?text=${text}`)
+})
