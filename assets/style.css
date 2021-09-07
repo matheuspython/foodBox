@@ -21,6 +21,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .produto {
   box-shadow: 0 0 10px 0 #bbbbbb;
